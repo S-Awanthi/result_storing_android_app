@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:padding="35dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/year_txt"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="YEAR            :"
+        android:textColor="#002b80"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/year_input"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="1"
+        android:maxLength="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/year_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/semester_txt"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="30dp"
+        android:text="SEMESTER  :"
+        android:textColor="#002b80"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_txt" />
+
+    <EditText
+        android:id="@+id/semester_input"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="1"
+        android:maxLength="1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/semester_txt"
+        app:layout_constraintTop_toBottomOf="@+id/year_input"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/course_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="145dp"
+        android:ems="10"
+        android:hint="Course Name"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:textColorHint="#507c7c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/course_code_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Course Code"
+        android:maxLength="9"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:textColorHint="#507c7c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_name_input" />
+
+    <EditText
+        android:id="@+id/course_grade_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Grade"
+        android:maxLength="2"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:textColorHint="#507c7c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_code_input" />
+
+    <Button
+        android:id="@+id/save_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/mybtnsave_and_update"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_grade_input" />
+
+    <Button
+        android:id="@+id/view_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/mybtnview"
+        android:text="View All Grades"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="118dp"-->
+<!--        android:layout_height="111dp"-->
+<!--        android:src="@drawable/victory"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </ImageView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

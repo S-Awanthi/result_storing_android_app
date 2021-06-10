@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ebf0fa"
+    android:id="@+id/mainLayout"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9dp">
+
+            <!-- ID field -->
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/id_txt"
+                android:layout_width="12dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Year text field -->
+            <TextView
+                android:id="@+id/yr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Year : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/course_name_txt"
+                app:layout_constraintStart_toEndOf="@+id/id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Year field -->
+            <TextView
+                android:id="@+id/year_txt"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="#00004d"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toTopOf="@+id/course_name_txt"
+                app:layout_constraintStart_toEndOf="@+id/yr"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Semester text field -->
+            <TextView
+                android:id="@+id/sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Semester : "
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/course_name_txt"
+                app:layout_constraintStart_toEndOf="@+id/year_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Semester field -->
+            <TextView
+                android:id="@+id/semester_txt"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textColor="#00004d"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toTopOf="@+id/course_name_txt"
+                app:layout_constraintStart_toEndOf="@+id/sem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Course Name field -->
+            <TextView
+                android:id="@+id/course_name_txt"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:text="Name"
+                android:textColor="#000080"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Course Code field -->
+            <TextView
+                android:id="@+id/course_code_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="Code"
+                android:textSize="12sp"
+                android:textColor="#002b80"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/course_name_txt"
+                app:layout_constraintTop_toBottomOf="@+id/course_name_txt" />
+
+            <!-- Grade field -->
+            <TextView
+                android:id="@+id/course_grade_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="A"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</ScrollView>
+

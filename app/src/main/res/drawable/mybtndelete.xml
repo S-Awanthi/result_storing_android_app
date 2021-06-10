@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    BUTTON EFFECT AFTER PRESS -->
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="150dip" />
+            <stroke android:width="1dip" android:color="#FFFFFF" />
+            <gradient android:angle="-180" android:startColor="#990000" android:endColor="#ff9999"  />
+        </shape>
+    </item>
+<!--    <item android:state_focused="true">-->
+<!--        <shape android:shape="rectangle"  >-->
+<!--            <corners android:radius="8dip" />-->
+<!--            <stroke android:width="1dip" android:color="#002b80" />-->
+<!--            <solid android:color="#002b80"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <!--    BUTTON EFFECT BEFORE PRESS -->
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="150dip" />
+            <stroke android:width="1dip" android:color="#FFFFFF" />
+            <gradient android:angle="-180" android:startColor="#ff9999" android:endColor="#990000" />
+        </shape>
+    </item>
+</selector>
